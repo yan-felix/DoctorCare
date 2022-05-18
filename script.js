@@ -45,7 +45,7 @@ function activateMenuAtCurrentSestion(currentSection){
     }
 }
 
-function onScroll(){ //Respon1sável por executar as mudanças relativas ao evento de rolagem.
+function onScroll(){ //Responsável por executar as mudanças relativas ao evento de rolagem.
     changeNavBarOnScroll()
     showBackToTopButton()
     activateMenuAtCurrentSestion(document.getElementById('Home'))
@@ -69,12 +69,8 @@ function closeMenu(){
 
 }
 
-function testeTouch(){
-    console.log("The touch is working!")
-}
-
 //Aplicação em execução==========================================================================================================
-onScroll() //Garante que a função onScroll seja executada assim que a página for carregada, evitando assim que ao recarregar a página com top =! 0 a barra de navegação perca sua classe scroll.
+onScroll() //Garante que a função onScroll seja executada assim que a página for carregada, evitando assim que ao recarregar a página com top diferente de 0 a barra de navegação perca sua classe scroll.
 
 window.addEventListener('scroll', onScroll)
 
